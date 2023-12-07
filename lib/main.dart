@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gym_sync/routes/route_generate.dart';
-import 'package:gym_sync/view_model/home_view_model.dart';
 import 'package:provider/provider.dart';
 
 void main() {
