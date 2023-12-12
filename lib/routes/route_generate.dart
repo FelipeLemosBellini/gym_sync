@@ -5,7 +5,7 @@ import 'package:gym_sync/routes/animation_transitions.dart';
 import 'package:gym_sync/routes/routes.dart';
 
 abstract class RouteGenerate {
-  static dynamic param(Object? map, String arg) {
+  static dynamic _param(Object? map, String arg) {
     Map<String, dynamic>? args = map as Map<String, dynamic>;
     return args[arg];
   }
@@ -18,14 +18,14 @@ abstract class RouteGenerate {
         pageBuilder: (context, state) => CustomTransitionPage(
             transitionDuration: const Duration(milliseconds: 600),
             transitionsBuilder: AnimationTransitions.leftToRight,
-            child: CreateWorkoutPage(gymWorkOutModel: RouteGenerate.param(state.extra, "gymWorkOutModel")))),
+            child: CreateWorkoutPage(gymWorkOutModel: RouteGenerate._param(state.extra, "gymWorkOutModel")))),
     GoRoute(
         name: Routes.exercisePage,
         path: "/${Routes.exercisePage}",
         pageBuilder: (context, state) => CustomTransitionPage(
             transitionDuration: const Duration(milliseconds: 600),
             transitionsBuilder: AnimationTransitions.leftToRight,
-            child: CreateWorkoutPage(gymWorkOutModel: RouteGenerate.param(state.extra, "gymWorkOutModel"))))
+            child: CreateWorkoutPage(gymWorkOutModel: RouteGenerate._param(state.extra, "gymWorkOutModel"))))
   ]);
 }
 // quando passa no pathParameters null ele quebra

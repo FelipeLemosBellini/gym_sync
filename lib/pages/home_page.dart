@@ -12,7 +12,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final HomeBloc bloc = HomeBloc(repositoryGym: IRepositoryGym());
+  final HomeBloc bloc = HomeBloc();
+
+  @override
+  void initState() {
+
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeBloc, HomeViewModel>(
@@ -20,7 +26,7 @@ class _HomePageState extends State<HomePage> {
         builder: (context, state) => Scaffold(
                 body: Center(
                     child: GestureDetector(
-              onTap: () => state.goToNewWorkout(context),
+              onTap: () => bloc.goToNewWorkout(context),
               child: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.all(Radius.circular(8))),
