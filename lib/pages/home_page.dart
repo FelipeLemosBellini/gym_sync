@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gym_sync/bloc/home_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gym_sync/repository/interface/repository_gym_interface.dart';
 import 'package:gym_sync/view_model/home_view_model.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,9 +15,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeBloc, HomeViewModel>(
