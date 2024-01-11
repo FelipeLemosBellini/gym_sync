@@ -1,4 +1,4 @@
-import 'package:gym_sync/models/workouts_model.dart';
+import 'package:gym_sync/core/models/workouts_model.dart';
 
 class GymWorkOutModel {
   final String title;

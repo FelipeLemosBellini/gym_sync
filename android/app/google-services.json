@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483348319583",
+    "project_id": "gym-sync-405bf",
+    "storage_bucket": "gym-sync-405bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483348319583:android:4e888fc3dda2a0dabbbaea",
+        "android_client_info": {
+          "package_name": "com.gym_sync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-iVSwP0dZKlAK55isgp-y5GnSiYd8MtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

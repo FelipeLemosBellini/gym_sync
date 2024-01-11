@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
-import 'package:gym_sync/pages/create_workout_page.dart';
-import 'package:gym_sync/pages/home_page.dart';
+import 'package:gym_sync/mvvm/pages/create_workout_page.dart';
+import 'package:gym_sync/mvvm/pages/home_page.dart';
 import 'package:gym_sync/routes/animation_transitions.dart';
 import 'package:gym_sync/routes/routes.dart';
 

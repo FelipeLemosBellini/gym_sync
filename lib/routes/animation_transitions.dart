@@ -14,7 +14,6 @@ abstract class AnimationTransitions {
           ).animate(CurvedAnimation(parent: secondaryAnimation, curve: Curves.easeInOut)),
           child: child));
 
-
   static Widget leftToRight(context, animation, secondaryAnimation, child) => SlideTransition(
       transformHitTests: false,
       position: Tween<Offset>(

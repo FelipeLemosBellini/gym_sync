@@ -1,4 +1,4 @@
-package com.example.gym_sync
+package com.gym_sync
 
 import io.flutter.embedding.android.FlutterActivity
 

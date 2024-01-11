@@ -1,7 +1,7 @@
 import 'package:gym_sync/core/exceptions/gym_exception.dart';
-import 'package:gym_sync/core/repository/interface/repository_gym_interface.dart';
-import 'package:gym_sync/models/gym_workout_model.dart';
-import 'package:gym_sync/models/workouts_model.dart';
+import 'package:gym_sync/core/models/gym_workout_model.dart';
+import 'package:gym_sync/core/models/workouts_model.dart';
+import 'package:gym_sync/core/repository/gym_database/interface/repository_gym_interface.dart';
 import 'package:either_dart/either.dart';
 
 class RepositoryGym extends IRepositoryGym {

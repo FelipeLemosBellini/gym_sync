@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gym_sync/models/gym_workout_model.dart';
+import 'package:gym_sync/core/models/gym_workout_model.dart';
 
 class CreateWorkoutPage extends StatefulWidget {
   final GymWorkOutModel gymWorkOutModel;
