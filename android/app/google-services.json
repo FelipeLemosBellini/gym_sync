@@ -12,7 +12,12 @@
           "package_name": "com.gym_sync"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "483348319583-j1st0gjgvrcs7sh8jm245n3i74hvaspg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD-iVSwP0dZKlAK55isgp-y5GnSiYd8MtM"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483348319583-j1st0gjgvrcs7sh8jm245n3i74hvaspg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

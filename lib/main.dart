@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:gym_sync/di/injection_dependencies.dart';
@@ -6,8 +7,8 @@ import 'package:gym_sync/routes/route_generate.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await FirebaseFirestore.instance.enablePersistence(const PersistenceSettings(synchronizeTabs: true));
   DI.setupDependencies();
   runApp(const MyApp());
 }
