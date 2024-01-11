@@ -24,4 +24,22 @@ class RepositoryGym extends IRepositoryGym {
       return Left(GymException(error: "Error"));
     }
   }
+
+  @override
+  Future<Either<GymException, void>> createWorkout({required GymWorkOutModel workOutModel}) async {
+    try {
+      return const Right(null);
+    } catch (e) {
+      return Left(GymException(error: "Error"));
+    }
+  }
+
+  @override
+  Future<Either<GymException, void>> editWorkout({required GymWorkOutModel nameWorkout}) async {
+    try {
+      return const Right(null);
+    } catch (e) {
+      return Left(GymException(error: "Error"));
+    }
+  }
 }
