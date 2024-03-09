@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
 import 'package:gym_sync/mvvm/bloc/home_bloc.dart';
 import 'package:gym_sync/mvvm/view_model/home_view_model.dart';
 
@@ -11,13 +12,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final HomeBloc bloc = HomeBloc();
+  final HomeBloc bloc = GetIt.I.get<HomeBloc>();
 
   @override
   void initState() {
     super.initState();
   }
 
+  @override
+  void dispose() {
+    super.dispose();
+    bloc.close();
+  }
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeBloc, HomeViewModel>(
