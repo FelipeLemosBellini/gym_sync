@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 abstract class AnimationTransitions {
   static Widget rightToLeft(context, animation, secondaryAnimation, child) => SlideTransition(
-      transformHitTests: false,
       position: Tween<Offset>(
         begin: const Offset(1.0, 0.0),
         end: Offset.zero,
@@ -15,7 +14,6 @@ abstract class AnimationTransitions {
           child: child));
 
   static Widget leftToRight(context, animation, secondaryAnimation, child) => SlideTransition(
-      transformHitTests: false,
       position: Tween<Offset>(
         begin: const Offset(-1.0, 0.0),
         end: Offset.zero,
@@ -28,7 +26,6 @@ abstract class AnimationTransitions {
           child: child));
 
   static Widget downToUp(context, animation, secondaryAnimation, child) => SlideTransition(
-      transformHitTests: false,
       position: Tween<Offset>(
         begin: const Offset(0.0, 1.0),
         end: Offset.zero,

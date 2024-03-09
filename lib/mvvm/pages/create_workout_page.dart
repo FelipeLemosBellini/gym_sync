@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gym_sync/core/models/gym_workout_model.dart';
 
 class CreateWorkoutPage extends StatefulWidget {
-  final GymWorkOutModel gymWorkOutModel;
+  final GymWorkoutModel gymWorkOutModel;
+
   const CreateWorkoutPage({super.key, required this.gymWorkOutModel});
 
   @override

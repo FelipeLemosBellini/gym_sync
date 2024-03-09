@@ -2,7 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:gym_sync/mvvm/pages/create_workout_page.dart';
 import 'package:gym_sync/mvvm/pages/home_page.dart';
 import 'package:gym_sync/routes/animation_transitions.dart';
-import 'package:gym_sync/routes/routes.dart';
+import 'package:gym_sync/routes/route_names.dart';
 
 abstract class RouteGenerate {
   static dynamic _param(Object? map, String arg) {
@@ -11,17 +11,17 @@ abstract class RouteGenerate {
   }
 
   static GoRouter router = GoRouter(routes: <RouteBase>[
-    GoRoute(path: Routes.initial, builder: (context, state) => const HomePage()),
+    GoRoute(path: RouteNames.initial, builder: (context, state) => const HomePage()),
     GoRoute(
-        name: Routes.workoutPage,
-        path: "/${Routes.workoutPage}",
+        name: RouteNames.workoutPage,
+        path: "/${RouteNames.workoutPage}",
         pageBuilder: (context, state) => CustomTransitionPage(
             transitionDuration: const Duration(milliseconds: 600),
             transitionsBuilder: AnimationTransitions.leftToRight,
             child: CreateWorkoutPage(gymWorkOutModel: RouteGenerate._param(state.extra, "gymWorkOutModel")))),
     GoRoute(
-        name: Routes.exercisePage,
-        path: "/${Routes.exercisePage}",
+        name: RouteNames.exercisePage,
+        path: "/${RouteNames.exercisePage}",
         pageBuilder: (context, state) => CustomTransitionPage(
             transitionDuration: const Duration(milliseconds: 600),
             transitionsBuilder: AnimationTransitions.leftToRight,

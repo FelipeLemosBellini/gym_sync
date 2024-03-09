@@ -5,7 +5,5 @@ import 'package:gym_sync/core/models/gym_workout_model.dart';
 abstract class IRepositoryGym {
   Future<Either<GymException, List<GymWorkoutModel>>> getMyWorkouts();
 
-  Future<Either<GymException, void>> createWorkout({required GymWorkoutModel workOutModel});
-
-  Future<Either<GymException, void>> editWorkout({required GymWorkoutModel nameWorkout});
+  Future<Either<GymException, void>> createWorkouts();
 }

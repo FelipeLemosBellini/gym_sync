@@ -1,8 +1,10 @@
-import 'package:gym_sync/core/models/workouts_model.dart';
 
-class GymWorkOutModel {
+
+import 'package:gym_sync/core/models/exercise_model.dart';
+
+class GymWorkoutModel {
   final String title;
-  final List<WorkoutsModel> workouts;
+  final List<ExerciseModel> workouts;
 
-  GymWorkOutModel({required this.title, required this.workouts});
+  GymWorkoutModel({required this.title, required this.workouts});
 }
