@@ -18,14 +18,14 @@ abstract class RouteGenerate {
         pageBuilder: (context, state) => CustomTransitionPage(
             transitionDuration: const Duration(milliseconds: 600),
             transitionsBuilder: AnimationTransitions.leftToRight,
-            child: CreateWorkoutPage(gymWorkOutModel: RouteGenerate._param(state.extra, "gymWorkOutModel")))),
+            child: CreateWorkoutPage(gymWorkOutModel: _param(state.extra, "gymWorkOutModel")))),
     GoRoute(
         name: RouteNames.exercisePage,
         path: "/${RouteNames.exercisePage}",
         pageBuilder: (context, state) => CustomTransitionPage(
             transitionDuration: const Duration(milliseconds: 600),
             transitionsBuilder: AnimationTransitions.leftToRight,
-            child: CreateWorkoutPage(gymWorkOutModel: RouteGenerate._param(state.extra, "gymWorkOutModel"))))
+            child: CreateWorkoutPage(gymWorkOutModel: _param(state.extra, "gymWorkOutModel"))))
   ]);
 }
 // quando passa no pathParameters null ele quebra

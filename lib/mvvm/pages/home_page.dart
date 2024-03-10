@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
     super.dispose();
     bloc.close();
   }
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeBloc, HomeViewModel>(
